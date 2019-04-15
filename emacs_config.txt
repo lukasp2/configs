@@ -1,0 +1,63 @@
+(load-theme 'wombat)
+
+(setq frame-title-format "emacs")
+
+;; removes scrollbar and toolbar
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(menu-bar-mode -1)
+
+;; show column numbers
+(column-number-mode)
+
+;; show matching parenthesis
+(show-paren-mode)
+
+;; use CUA keys
+(cua-mode t)
+
+;; dont display startup screen
+'(inhibit-startup-screen t)
+
+;; change window with Shift + arrow keys
+(windmove-default-keybindings)
+
+;; A C-x C-f interface 
+(ido-mode)
+
+;; undo/redo window configuration with C-c left/right
+(winner-mode t)
+
+;; linum mode
+(global-linum-mode t)
+
+(setq c-default-style "linux"
+      c-basic-offset 4)
+
+(setq default-directory "C:/emacs/projects/")
+
+(require 'package)
+
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/")
+             t)
+
+(add-to-list 'package-archives
+	     '("marmalade" . "http://marmalade-repo.org/packages/")
+             t)
+
+(package-initialize)
+
+;; theme for powerline
+(powerline-center-theme)
+
+;; (global-undo-tree-mode)
+
+;; (ac-config-default)
+
+;; (global-set-key (kbd "M-/") 'undo-tree-visualize')
+
+;; added by Custom
+(custom-set-variables '(package-selected-packages (quote (htmlize minimap powerline ace-window))))
+
+(custom-set-faces)
