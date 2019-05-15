@@ -51,11 +51,14 @@
 ;; theme for powerline
 (powerline-center-theme)
 
-;; (global-undo-tree-mode)
+;; move lines with M-<up> and M-<down>
+(fset 'move-line-up
+   [?\C-a ?\C-  ?\C-e ?\C-w up ?\C-  ?\C-e ?\C-w down ?\C-y up ?\C-y ?\M-y ?\C-a])
+(global-set-key (kbd "M-<up>") 'move-line-up)
 
-;; (ac-config-default)
-
-;; (global-set-key (kbd "M-/") 'undo-tree-visualize')
+(fset 'move-line-down
+   [?\C-a ?\C-  ?\C-e ?\C-w down ?\C-  ?\C-e ?\C-w up ?\C-y down ?\C-y ?\M-y ?\C-a])      
+(global-set-key (kbd "M-<down>") 'move-line-down)
 
 ;; added by Custom
 (custom-set-variables '(package-selected-packages (quote (htmlize minimap powerline ace-window))))
