@@ -31,6 +31,12 @@
 ;; linum mode
 (global-linum-mode t)
 
+;; disable the most annoying default config of emacs: the beep.
+(setq visible-bell 1)
+;; or set a different function:
+;; (setq ring-bell-function (lambda () (print "BEEP BEEP MO-FOCKER")))
+;; (setq ring-bell-function (lambda () (play-sound-file "/Users/blahblah.mp3")))
+
 (setq c-default-style "linux"
       c-basic-offset 4)
 
