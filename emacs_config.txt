@@ -1,5 +1,10 @@
+;; device dependent
+;; (setq default-directory "C:/Users/lukpo/Dropbox/")
+
+;; loads the theme
 (load-theme 'wombat)
 
+;; set window name to emacs
 (setq frame-title-format "emacs")
 
 ;; removes scrollbar and toolbar
