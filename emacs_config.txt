@@ -47,9 +47,7 @@
 
 (setq c-default-style "linux"
       c-basic-offset 4)
-
-(setq default-directory "C:/emacs/projects/")
-
+      
 (require 'package)
 
 (add-to-list 'package-archives
