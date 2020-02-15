@@ -1,5 +1,5 @@
 ;; device dependent
-;; (setq default-directory "C:/Users/lukpo/Dropbox/")
+;; (setq default-directory "~")
 
 ;; loads the theme
 (load-theme 'wombat)
@@ -76,3 +76,10 @@
 (custom-set-variables '(package-selected-packages (quote (htmlize minimap powerline ace-window))))
 
 (custom-set-faces)
+
+;; now install powerline:
+;; list-packages
+;; list-matching-lines (powerline)
+
+
+
