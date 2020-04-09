@@ -1,0 +1,14 @@
+#download latest version of Java JDK here:
+https://www.oracle.com/java/technologies/javase-downloads.html
+
+#unpack tarball
+tar -zxf jdk... -C /opt/JDKit
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/opt/JDKit/jdk-13.0.2/bin/java" 1010
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/opt/JDKit/jdk-13.0.2/bin/javac" 1010
+
+#now java -version works
+
+# setting priority is only needed if other versions of java exists:
+sudo update-alternatives --config java
+
