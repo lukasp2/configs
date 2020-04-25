@@ -5,6 +5,9 @@ sudo apt install -y gcc emacs curl git xclip htop
 
 # generate ssh key (you will have to type in the location of the file where you would like to save the private key)
 ssh-keygen -t rsa
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+
 # copy the ssh, you will have to paste in into github manually
 xclip -sel clip < ~/.ssh/id_rsa.pub
 
