@@ -4,6 +4,9 @@ sudo apt install -y gcc emacs curl git xclip htop
 ## Additionals
 # sudo apt install -y entr ncdu python3-pip
 
+## for GNUplot (https://sourceforge.net/projects/gnuplot/files/gnuplot/)
+# sudo apt-get install libcairo2-dev libpango1.0-dev libgd-dev
+
 ## Generate ssh key (push and pull from git w/o needing credentials)
 ssh-keygen -t rsa
 eval $(ssh-agent -s)
