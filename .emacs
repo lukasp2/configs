@@ -84,4 +84,7 @@
 ;; package-install minimap
 ;; package-install neotree
 
+(defun odoo8 ()
+  (interactive)
+  (find-file "/ssh:lukas@192.168.2.175:/home/lukas/Desktop/tmp.txt"))
 
