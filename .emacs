@@ -3,6 +3,7 @@
 
 ;; loads the theme
 (load-theme 'wombat)
+; (load-theme 'solarized-dark-high-contrast)
 
 ;; set window name to emacs
 (setq frame-title-format "emacs")
@@ -73,13 +74,14 @@
 (global-set-key (kbd "M-<down>") 'move-line-down)
 
 ;; added by Custom
-(custom-set-variables '(package-selected-packages (quote (htmlize minimap powerline ace-window))))
+(custom-set-variables '(package-selected-packages (quote (minimap powerline ace-window))))
 
 (custom-set-faces)
 
-;; now install powerline:
-;; list-packages
-;; list-matching-lines (powerline)
-
+;; now install packages:
+;; package-install powerline
+;; package-install magit
+;; package-install minimap
+;; package-install neotree
 
 
