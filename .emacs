@@ -79,6 +79,7 @@
 ;; neotree
 ;; smex
 ;; alpha
+;; multiple-cursors
 
 ;; theme for powerline
 ;; (powerline-center-theme)
@@ -86,12 +87,12 @@
 ;; ido-mode for M-x
 ;; (global-set-key (kbd "M-x") 'smex)
 
-;; set transparency
+;; set transparency (Shift-Ctrl-Alt 8/9)
 (require 'alpha)
 (global-set-key (kbd "C-M-)") 'transparency-increase)
 (global-set-key (kbd "C-M-(") 'transparency-decrease)
 
-;; multiple cursors
+;; multiple cursors (Shift-AltGr 7/0)
 (global-set-key (kbd "C-{") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-}") 'mc/mark-next-like-this)
 
