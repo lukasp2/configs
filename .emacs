@@ -1,5 +1,5 @@
 ;; device dependent
-;; (setq default-directory "~")
+(setq default-directory "~")
 
 ;; loads the theme
 (load-theme 'wombat)
@@ -39,9 +39,6 @@
 
 ;; disable the most annoying default config of emacs: the beep.
 (setq visible-bell 1)
-;; or set a different function:
-;; (setq ring-bell-function (lambda () (print "BEEP BEEP MO-FOCKER")))
-;; (setq ring-bell-function (lambda () (play-sound-file "/Users/blahblah.mp3")))
 
 ;; break line at end of window
 (global-visual-line-mode t)
@@ -61,9 +58,6 @@
 
 (package-initialize)
 
-;; theme for powerline
-(powerline-center-theme)
-
 ;; move lines with M-<up> and M-<down>
 (fset 'move-line-up
    [?\C-a ?\C-  ?\C-e ?\C-w up ?\C-  ?\C-e ?\C-w down ?\C-y up ?\C-y ?\M-y ?\C-a])
@@ -78,13 +72,33 @@
 
 (custom-set-faces)
 
-;; now install packages:
-;; package-install powerline
-;; package-install magit
-;; package-install minimap
-;; package-install neotree
+;; INSTALL PACKAGES
+;; powerline
+;; magit
+;; minimap
+;; neotree
+;; smex
+;; alpha
+
+;; theme for powerline
+;; (powerline-center-theme)
+
+;; ido-mode for M-x
+;; (global-set-key (kbd "M-x") 'smex)
+
+;; set transparency
+(require 'alpha)
+(global-set-key (kbd "C-M-)") 'transparency-increase)
+(global-set-key (kbd "C-M-(") 'transparency-decrease)
+
+;; multiple cursors
+(global-set-key (kbd "C-{") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-}") 'mc/mark-next-like-this)
 
 (defun odoo8 ()
   (interactive)
-  (find-file "/ssh:lukas@192.168.2.175:/home/lukas/Desktop/tmp.txt"))
+  (find-file "/ssh:lukas@192.168.2.175:/home/lukas/"))
+
+;; reload .emacs C-x C-e
+;; list buffers C-x C-b or C-x b
 
