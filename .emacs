@@ -5,6 +5,7 @@
 (load-theme 'wombat)
 ;; (load-theme 'solarized-dark-high-contrast)
 ;; (load-theme 'monokai)
+;; (load-theme 'sanityinc-tomorrow-night)
 
 ;; set window name to emacs
 (setq frame-title-format "emacs")
