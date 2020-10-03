@@ -48,7 +48,6 @@
       c-basic-offset 4)
       
 (require 'package)
-
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/")
 	     t)
@@ -56,17 +55,7 @@
 (add-to-list 'package-archives
 	     '("marmalade" . "http://marmalade-repo.org/packages/")
              t)
-
 (package-initialize)
-
-;; move lines with M-<up> and M-<down>
-(fset 'move-line-up
-   [?\C-a ?\C-  ?\C-e ?\C-w up ?\C-  ?\C-e ?\C-w down ?\C-y up ?\C-y ?\M-y ?\C-a])
-(global-set-key (kbd "M-<up>") 'move-line-up)
-
-(fset 'move-line-down
-   [?\C-a ?\C-  ?\C-e ?\C-w down ?\C-  ?\C-e ?\C-w up ?\C-y down ?\C-y ?\M-y ?\C-a])      
-(global-set-key (kbd "M-<down>") 'move-line-down)
 
 ;; added by Custom
 (custom-set-variables '(package-selected-packages (quote (minimap powerline ace-window))))
@@ -87,6 +76,15 @@
 
 ;; ido-mode for M-x
 ;; (global-set-key (kbd "M-x") 'smex)
+
+;; move lines with M-<up> and M-<down>
+(fset 'move-line-up
+   [?\C-a ?\C-  ?\C-e ?\C-w up ?\C-  ?\C-e ?\C-w down ?\C-y up ?\C-y ?\M-y ?\C-a])
+(global-set-key (kbd "M-<up>") 'move-line-up)
+
+(fset 'move-line-down
+   [?\C-a ?\C-  ?\C-e ?\C-w down ?\C-  ?\C-e ?\C-w up ?\C-y down ?\C-y ?\M-y ?\C-a])      
+(global-set-key (kbd "M-<down>") 'move-line-down)
 
 ;; set transparency (Shift-Ctrl-Alt 8/9)
 (require 'alpha)
