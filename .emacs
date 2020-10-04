@@ -67,9 +67,9 @@
 ;; powerline
 ;; magit
 ;; minimap
-;; neotree
-;; smex
-;; alpha
+;; neotree  ;; file list
+;; smex ;; ido mode for M-x
+;; alpha ;; change opacity of window
 ;; multiple-cursors
 
 ;; theme for powerline
@@ -92,13 +92,18 @@
 (global-set-key (kbd "C-M-)") 'transparency-increase)
 (global-set-key (kbd "C-M-(") 'transparency-decrease)
 
-;; multiple cursors (Shift-AltGr 7/0)
+;; multiple cursors (Ctrl-AltGr 7/0)
 (global-set-key (kbd "C-{") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-}") 'mc/mark-next-like-this)
 
-(defun odoo8 ()
+;; work related funcs
+(defun ssh-maria ()
   (interactive)
-  (find-file "/ssh:lukas@192.168.2.175:/home/lukas/"))
+  (find-file "/ssh:lupo@odoo8:/usr/share/"))
+
+(defun ssh-tor ()
+  (interactive)
+  (find-file "/ssh:lupo@localhost#5022:/usr/share/"))
 
 ;; reload .emacs C-x C-e
 ;; list buffers C-x C-b or C-x b
