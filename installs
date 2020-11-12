@@ -1,8 +1,8 @@
 ## Nice to have
-sudo apt install -y gcc emacs curl git xclip htop
+sudo apt install -y emacs curl git xclip htop ncdu
 
 ## Additionals
-# sudo apt install -y entr ncdu python3-pip
+# sudo apt install -y entr python3-pip gcc 
 
 ## for GNUplot (https://sourceforge.net/projects/gnuplot/files/gnuplot/)
 # sudo apt-get install libcairo2-dev libpango1.0-dev libgd-dev
