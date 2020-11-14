@@ -1,5 +1,6 @@
 ## Nice to have
-sudo apt install -y emacs curl git xclip htop ncdu
+sudo apt update; sudo apt upgrade; sudo apt autoremove
+sudo apt install -y emacs curl git xclip htop ncdu guake
 
 ## Additionals
 # sudo apt install -y entr python3-pip gcc 
@@ -11,7 +12,6 @@ sudo apt install -y emacs curl git xclip htop ncdu
 ssh-keygen -t rsa
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
-
 # copy the ssh (you have to paste in into github manually)
 xclip -sel clip < ~/.ssh/id_rsa.pub
 
