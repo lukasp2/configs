@@ -1,9 +1,11 @@
 #download latest version of Java JDK here:
 https://www.oracle.com/java/technologies/javase-downloads.html
 
-#unpack tarball
-tar -zxf jdk... -C /opt/JDKit
+#if you just need to run java from VScode, you only need to place the content 
+#of the extracted tarball in for ex. /usr/lib/jvm/jdk-15 like so:
+tar -zxf [downloaded file] -C /usr/lib/jvm/jdk-15
 
+#if you also need to run from command line:
 sudo update-alternatives --install "/usr/bin/java" "java" "/opt/JDKit/jdk-13.0.2/bin/java" 1010
 sudo update-alternatives --install "/usr/bin/javac" "javac" "/opt/JDKit/jdk-13.0.2/bin/javac" 1010
 
