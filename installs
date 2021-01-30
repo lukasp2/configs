@@ -3,12 +3,12 @@ sudo apt update; sudo apt upgrade; sudo apt autoremove
 sudo apt install -y emacs curl git xclip htop ncdu guake python3-pip
 
 ## Additionals
-# sudo apt install -y entr python3-pip gcc 
+# sudo apt install -y entr gcc 
 
 ## for GNUplot (https://sourceforge.net/projects/gnuplot/files/gnuplot/)
 # sudo apt-get install libcairo2-dev libpango1.0-dev libgd-dev
 
-## Generate ssh key (push and pull from git w/o needing credentials)
+## Generate ssh keys (push and pull from git w/o needing credentials)
 ssh-keygen -t rsa
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
