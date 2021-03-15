@@ -49,34 +49,18 @@
       c-basic-offset 4)
       
 (require 'package)
-(add-to-list 'package-archives
-	     '("melpa" . "https://melpa.org/packages/")
-	     t)
-
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/")
-             t)
+;;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
+;; NOTE: You'll need to run M-x package-refresh-contents or M-x package-list-packages to ensure fetching of the package list before installing packages.
 
 ;; added by Custom
-(custom-set-variables '(package-selected-packages (quote (minimap powerline ace-window))))
+(custom-set-variables
+ '(inhibit-startup-screen t)
+)
 
 (custom-set-faces)
-
-;; INSTALL PACKAGES
-;; powerline
-;; magit
-;; minimap
-;; neotree  ;; file list
-;; smex ;; ido mode for M-x
-;; alpha ;; change opacity of window
-;; multiple-cursors
-
-;; theme for powerline
-;; (powerline-center-theme)
-
-;; ido-mode for M-x
-;; (global-set-key (kbd "M-x") 'smex)
 
 ;; move lines with M-<up> and M-<down>
 (fset 'move-line-up
@@ -87,24 +71,31 @@
    [?\C-a ?\C-  ?\C-e ?\C-w down ?\C-  ?\C-e ?\C-w up ?\C-y down ?\C-y ?\M-y ?\C-a])      
 (global-set-key (kbd "M-<down>") 'move-line-down)
 
-;; set transparency (Shift-Ctrl-Alt 8/9)
-(require 'alpha)
-(global-set-key (kbd "C-M-)") 'transparency-increase)
-(global-set-key (kbd "C-M-(") 'transparency-decrease)
-
 ;; multiple cursors (Ctrl-AltGr 7/0)
 (global-set-key (kbd "C-{") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-}") 'mc/mark-next-like-this)
 
-;; work related funcs
-(defun ssh-maria ()
-  (interactive)
-  (find-file "/ssh:lupo@odoo8:/usr/share/"))
+;; INSTALL PACKAGES
+;; powerline
+;; magit
+;; minimap
+;; neotree  ;; file list
+;; smex ;; ido mode for M-x
+;; multiple-cursors
+;; alpha ;; change opacity of window MARMALADE
 
-(defun ssh-tor ()
-  (interactive)
-  (find-file "/ssh:lupo@localhost#5022:/usr/share/"))
+;; AFTER PACKAGES HAVE BEEN INSTALLED, UNCOMMENT THESE
+;; theme for powerline
+;; (powerline-center-theme)
 
+;; ido-mode for M-x
+;; (global-set-key (kbd "M-x") 'smex)
+
+;; set transparency (Shift-Ctrl-Alt 8/9)
+;; (require 'alpha)
+;; (global-set-key (kbd "C-M-)") 'transparency-increase)
+;; (global-set-key (kbd "C-M-(") 'transparency-decrease)
+
+;; NOTES
 ;; reload .emacs C-x C-e
 ;; list buffers C-x C-b or C-x b
-
