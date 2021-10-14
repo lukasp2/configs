@@ -1,6 +1,6 @@
-# configuration files
+# My configuration files, don't mind me
 
-## Konsole
+## Konsole bindings
 views
 - Split view left/right: ```Ctrl+X 3```
 - Split view up/down: ```Ctrl+X 2```
