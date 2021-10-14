@@ -1,0 +1,22 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[Dialogs]
+FirstRun=false
+
+[Favorite Profiles]
+Favorites=Shell.profile
+
+[Shortcuts]
+close-active-terminal=Ctrl+X, 0
+move-session-left=none
+move-session-right=none
+next-session=Ctrl+Shift+Right
+next-terminal=Shift+Right
+previous-session=Ctrl+Shift+Left
+previous-terminal=Shift+Left
+split-left-right=Ctrl+X, 3
+split-top-bottom=Ctrl+X, 2
