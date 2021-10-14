@@ -1,5 +1,3 @@
-<!-- this is a configuration file for Konsole which resides in ~/.kde/share/apps/konsole/konsoleui.rc. -->
-
 <!DOCTYPE kpartgui>
 <kpartgui version="10" name="konsole">
  <MenuBar>
