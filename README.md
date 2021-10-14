@@ -1,4 +1,4 @@
-# My configuration files, don't mind me
+# My configuration files
 
 ## Konsole bindings
 views
