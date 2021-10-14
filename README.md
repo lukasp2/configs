@@ -1,4 +1,4 @@
-# My configuration files
+# This repo contains various config files
 
 ## Konsole bindings
 views
