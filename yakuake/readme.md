@@ -1,7 +1,11 @@
 # Yakuake
-A config file for yakuake terminal emulator which resides in ~/.kde/share/config/yakuakerc
+Config files for yakuake terminal emulator
 
-## key bindings
+## Setup
+- install package ```yakuake```
+- put the config files under ```~/.kde/share/config/```
+
+## Key bindings
 ### window
 - open: §
 - increase height: Shift+Alt+Down
