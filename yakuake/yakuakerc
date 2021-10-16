@@ -15,8 +15,14 @@ Favorites=Shell.profile
 
 [Shortcuts]
 close-active-terminal=Ctrl+X, 0
+close-session=Alt+Shift+W
+decrease-window-height=Alt+Shift+Up
+decrease-window-width=Alt+Shift+Left
+increase-window-height=Alt+Shift+Down
+increase-window-width=Alt+Shift+Right
 move-session-left=none
 move-session-right=none
+new-session=Alt+Shift+T
 next-session=Ctrl+Shift+Right
 next-terminal=Shift+Right
 previous-session=Ctrl+Shift+Left
