@@ -1,8 +1,11 @@
 [$Version]
 update_info=yakuake.upd:2.9.9-startupnotification
 
+[Animation]
+frames=0
+
 [Desktop Entry]
-DefaultProfile=Shell.profile
+DefaultProfile=
 
 [Dialogs]
 FirstRun=false
