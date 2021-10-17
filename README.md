@@ -1,2 +1,3 @@
-## This repo contains various config files
+# Various config, and config related, files
+
 
