@@ -1,0 +1,7 @@
+[alias]
+	lol = log --oneline --graph --decorate
+[user]
+	email = lukpohl3@gmail.com
+	name = Lukas Pohlman
+[core]
+	editor = emacs --wait
