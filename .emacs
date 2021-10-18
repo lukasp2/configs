@@ -1,6 +1,9 @@
 ;; device dependent
 (setq default-directory "~")
 
+; set cursor color
+(set-cursor-color "#f0f0f0")
+
 ;; loads the theme
 (load-theme 'wombat)
 ;; (load-theme 'solarized-dark-high-contrast)
