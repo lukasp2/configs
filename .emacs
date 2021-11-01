@@ -12,7 +12,7 @@
 ;; (load-theme 'sanityinc-tomorrow-night)
 
 ;; set window name to emacs
-(setq frame-name "emacs")
+(setq-default frame-title-format '("emacs"))
 
 ;; set modeline
 '(mode-line ((t (:box (:line-width 1 :color, "#AAAAAA")))))
