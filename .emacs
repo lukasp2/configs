@@ -53,8 +53,7 @@
       c-basic-offset 4)
       
 (require 'package)
-;;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 ;; NOTE: You'll need to run M-x package-refresh-contents or M-x package-list-packages to ensure fetching of the package list before installing packages.
