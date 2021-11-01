@@ -34,8 +34,8 @@
 ;; A C-x C-f interface 
 (ido-mode)
 
-;; ido-mode for M-x
-(global-set-key (kbd "M-x") 'smex)
+;; ido-mode for M-x <install-package smex>
+;; (global-set-key (kbd "M-x") 'smex)
 
 ;; undo/redo window configuration with C-c left/right
 (winner-mode t)
