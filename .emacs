@@ -14,6 +14,10 @@
 ;; set window name to emacs
 (setq frame-name "emacs")
 
+;; set modeline
+'(mode-line ((t (:box (:line-width 1 :color, "#AAAAAA")))))
+(set-face-attribute 'mode-line nil :box '(:width 0))
+
 ;; removes scrollbar and toolbar
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
