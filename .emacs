@@ -2,8 +2,7 @@
 (setq default-directory "~")
 
 ;; loads the theme
-(load-theme 'tsdh-dark)
-;; (load-theme 'wombat)
+(load-theme 'wombat)
 ;; (load-theme 'solarized-dark-high-contrast)
 ;; (load-theme 'monokai)
 ;; (load-theme 'sanityinc-tomorrow-night)
@@ -34,8 +33,11 @@
 ;; A C-x C-f interface 
 (ido-mode)
 
-;; ido-mode for M-x <install-package smex>
+;; ido-mode for M-x <package-install smex>
 ;; (global-set-key (kbd "M-x") 'smex)
+
+;; theme for powerline <package-install powerline-center-theme>
+;; (powerline-center-theme)
 
 ;; undo/redo window configuration with C-c left/right
 (winner-mode t)
@@ -80,17 +82,14 @@
 
 ;; INSTALL PACKAGES
 ;; powerline
+;; smex ;; ido mode for M-x
 ;; magit
 ;; minimap
 ;; neotree  ;; file list
-;; smex ;; ido mode for M-x
 ;; multiple-cursors
 ;; alpha ;; change opacity of window MARMALADE
 
 ;; AFTER PACKAGES HAVE BEEN INSTALLED, UNCOMMENT THESE
-;; theme for powerline
-;; (powerline-center-theme)
-
 ;; set transparency (Shift-Ctrl-Alt 8/9)
 ;; (require 'alpha)
 ;; (global-set-key (kbd "C-M-)") 'transparency-increase)
