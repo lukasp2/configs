@@ -14,15 +14,15 @@ Config files for yakuake terminal emulator
 - decrease width: Shift+Alt+Left
 
 ### views
-- split view left/right: Ctrl+X 3
-- split view up/down: Ctrl+X 2
-- close view: Ctrl+X 0
+- split view left/right: Ctrl+(
+- split view up/down: Ctrl+)
+- close view: Ctrl+Shift R
 - next view: Shift+Right
 - prev view: Shift+Left
 	
 ### tabs
 - new tab: Ctrl+Shift T
-- close tab: Ctrl+Shift W (doesnt work)
+- close tab: <close all views in the tab>
 - next session: Ctrl+Shift+Right
 - prev session: Ctrl+Shift+Left
 - rename tab: Ctrl+Alt+S
