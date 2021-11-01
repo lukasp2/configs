@@ -5,13 +5,14 @@
 (set-cursor-color "#f0f0f0")
 
 ;; loads the theme
-(load-theme 'wombat)
+(load-theme 'tsdh-dark)
+;; (load-theme 'wombat)
 ;; (load-theme 'solarized-dark-high-contrast)
 ;; (load-theme 'monokai)
 ;; (load-theme 'sanityinc-tomorrow-night)
 
 ;; set window name to emacs
-(setq frame-title-format "emacs")
+(setq frame-name "emacs")
 
 ;; removes scrollbar and toolbar
 (tool-bar-mode -1)
