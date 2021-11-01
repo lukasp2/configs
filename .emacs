@@ -1,9 +1,6 @@
 ;; device dependent
 (setq default-directory "~")
 
-; set cursor color
-(set-cursor-color "#f0f0f0")
-
 ;; loads the theme
 (load-theme 'tsdh-dark)
 ;; (load-theme 'wombat)
@@ -12,11 +9,7 @@
 ;; (load-theme 'sanityinc-tomorrow-night)
 
 ;; set window name to emacs
-(setq-default frame-title-format '("emacs"))
-
-;; set modeline
-'(mode-line ((t (:box (:line-width 1 :color, "#AAAAAA")))))
-(set-face-attribute 'mode-line nil :box '(:width 0))
+(setq frame-title-format '("emacs"))
 
 ;; removes scrollbar and toolbar
 (tool-bar-mode -1)
@@ -40,6 +33,9 @@
 
 ;; A C-x C-f interface 
 (ido-mode)
+
+;; ido-mode for M-x
+(global-set-key (kbd "M-x") 'smex)
 
 ;; undo/redo window configuration with C-c left/right
 (winner-mode t)
@@ -95,9 +91,6 @@
 ;; AFTER PACKAGES HAVE BEEN INSTALLED, UNCOMMENT THESE
 ;; theme for powerline
 ;; (powerline-center-theme)
-
-;; ido-mode for M-x
-;; (global-set-key (kbd "M-x") 'smex)
 
 ;; set transparency (Shift-Ctrl-Alt 8/9)
 ;; (require 'alpha)
