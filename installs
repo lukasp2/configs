@@ -1,12 +1,11 @@
+## Step 1: add apt repositories in /etc/apt/sources.list, then run sudo apt update
+
 ## Nice to have
 sudo apt update; sudo apt upgrade; sudo apt autoremove
-sudo apt install -y emacs curl git xclip htop ncdu guake python3-pip
+sudo apt install -y emacs curl git xclip htop ncdu yakuake python3-pip
 
 ## Additionals
 # sudo apt install -y entr gcc 
-
-## for GNUplot (https://sourceforge.net/projects/gnuplot/files/gnuplot/)
-# sudo apt-get install libcairo2-dev libpango1.0-dev libgd-dev
 
 ## Generate ssh keys (push and pull from git w/o needing credentials)
 ssh-keygen -t rsa
@@ -20,8 +19,3 @@ git config --global user.email "lukpohl3@gmail.com"
 git config --global user.name "Lukas Pohlman"
 git config --global core.editor "emacs --wait"
 git config --global core.autocrlf input #('false' instead of 'input' if windows)
-
-## Spoitfy
-curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update && sudo apt-get install spotify-client
