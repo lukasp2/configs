@@ -3,7 +3,7 @@ Config files for yakuake terminal emulator
 
 ## Setup
 - install package ```yakuake```
-- put the config file where it belongs, might be under ```~/config/```
+- put the config file where it belongs, might be under ```~/.config/```
 
 ## Key bindings
 ### window
