@@ -14,7 +14,6 @@ FirstRun=false
 Favorites=Shell.profile
 
 [Shortcuts]
-close-active-terminal=Ctrl+X, 0
 close-session=Alt+Shift+W
 decrease-window-height=Alt+Shift+Up
 decrease-window-width=Alt+Shift+Left
@@ -27,5 +26,3 @@ next-session=Ctrl+Shift+Right
 next-terminal=Shift+Right
 previous-session=Ctrl+Shift+Left
 previous-terminal=Shift+Left
-split-left-right=Ctrl+X, 3
-split-top-bottom=Ctrl+X, 2
