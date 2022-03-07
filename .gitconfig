@@ -4,4 +4,6 @@
 	email = lukpohl3@gmail.com
 	name = Lukas Pohlman
 [core]
-	editor = emacs
+	editor = nano
+[merge]
+        tool = kdiff3
