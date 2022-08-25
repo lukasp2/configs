@@ -1,5 +1,5 @@
 [alias]
-	lol = log --oneline --graph --decorate
+	lol = log --oneline --graph --decorate -n 5
 [user]
 	email = lukpohl3@gmail.com
 	name = Lukas Pohlman
