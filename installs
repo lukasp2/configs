@@ -1,11 +1,12 @@
-## Step 1: add apt repositories in /etc/apt/sources.list, then run sudo apt update
-
 ## Nice to have
 sudo apt update; sudo apt upgrade; sudo apt autoremove
 sudo apt install -y emacs curl git xclip htop ncdu yakuake python3-pip
 
-## Additionals
-# sudo apt install -y entr gcc 
+# desktop environment
+sudo apt install -y xfce4 xfce4-goodies
+
+# additionals
+# sudo apt install -y entr
 
 ## Generate ssh keys (push and pull from git w/o needing credentials)
 ssh-keygen -t rsa
@@ -17,5 +18,6 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 # setup git
 git config --global user.email "lukpohl3@gmail.com"
 git config --global user.name "Lukas Pohlman"
-git config --global core.editor "emacs --wait"
+git config --global core.editor "nano"
 git config --global core.autocrlf input #('false' instead of 'input' if windows)
+git config --global alias.lol "log --oneline --decorate --graph -n 5"
