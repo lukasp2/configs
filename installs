@@ -1,6 +1,6 @@
 ## Nice to have
 sudo apt update; sudo apt upgrade; sudo apt autoremove
-sudo apt install -y emacs curl git xclip htop ncdu yakuake python3-pip
+sudo apt install -y emacs curl git xclip htop ncdu yakuake python3-pip tree
 
 # desktop environment
 sudo apt install -y xfce4 xfce4-goodies
